@@ -1,4 +1,4 @@
-<p id="notice"></p>
+<p></p>
 <h1>Books</h1>
 <table>
   <thead>
@@ -26,7 +26,7 @@
 <h2>New book</h2>
 
 <% if @book.errors.any? %>
- <%= @book.errors.count %>件のエラーが発生しました
+ <%= pluralize(@book.errors.count, "error") %>
  <ul>
    <% @book.errors.full_messages.each do |messages| %>
    <li><%= messages %></li>
@@ -34,7 +34,7 @@
  </ul>
 <% end %>
 
-<%= form_with model: @book,url: "/books",method: :post do |f| %>
+<%= form_with model: @book,url: books_path,method: :post do |f| %>
 
 <div class="field">
 <%= f.label :title %>
