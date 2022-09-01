@@ -53,3 +53,54 @@ label,input {
     background-color: #000;
     color: #fff;
 }
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    border-top-color: red;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-right-color: red;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left-color: red;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    padding: 7px;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 0;
+    padding-left: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+}
